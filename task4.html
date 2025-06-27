@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="task4.css" />
+</head>g
+<body>
+    <!-- part 1 -->
+  <header>
+    <nav>
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links">
+        <li ><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Projects</h1>
+    <div class="projects">
+      <div class="card">
+        <h2>To-Do App</h2>
+        <p>Simple app with add/delete functionality and localStorage support.</p>
+      </div>
+      <div class="card">
+        <h2>Product Filter Page</h2>
+        <p>Filter and sort products dynamically with JavaScript.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio</p>
+  </footer>
+
+
+
+
+  <!-- part 2 -->
+  <div>
+     <header>
+    <nav>
+      <div class="logo">My Portfolio</div>
+   
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>About Me</h1>
+    <p>Hello! I'm a front-end web developer passionate about building clean and interactive UIs using HTML, CSS, and JavaScript.</p>
+  </main>
+
+ 
+  </div>
+
+<!-- part 3 -->
+
+  <header>
+    <nav>
+      <div class="logo">My Portfolio</div>
+      
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Contact Me</h1>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+
+
+
+<!-- part4 -->
+  <div class="container">
+    <h1>To-Do List</h1>
+    <div class="todo-input">
+      <input type="text" id="taskInput" placeholder="Enter a task" />
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+  </div>
+
+
+
+
+
+
+  <!-- part 5 -->
+
+
+   <div class="container">
+    <h1>Product Listing</h1>
+
+    <div class="controls">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Fashion">Fashion</option>
+      </select>
+
+      <select id="priceFilter">
+        <option value="all">All Prices</option>
+        <option value="0-500">Below ₹500</option>
+        <option value="500-1000">₹500 - ₹1000</option>
+        <option value="1000-99999">Above ₹1000</option>
+      </select>
+
+      <select id="sortBy">
+        <option value="default">Sort By</option>
+        <option value="priceAsc">Price: Low to High</option>
+        <option value="priceDesc">Price: High to Low</option>
+        <option value="ratingDesc">Rating: High to Low</option>
+      </select>
+    </div>
+
+    <div id="productList" class="products"></div>
+  </div>
+
+ 
+
+  <script src="task4.js"></script>
+</body>
+</html>
